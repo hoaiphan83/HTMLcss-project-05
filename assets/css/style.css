@@ -55,6 +55,8 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: 28px; /* 175% */
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .section-heading {
@@ -67,7 +69,6 @@ button {
 }
 
 .section-desc {
-  margin-top: 20px;
   color: #696d76;
   font-family: "Open Sans";
   font-size: 18px;
@@ -83,6 +84,7 @@ button {
   top: -30px;
   background: #fff;
   z-index: 1;
+  margin-bottom: 88px;
 }
 
 .header__inner {
@@ -92,8 +94,6 @@ button {
 
 .navbar__list {
   padding-left: 70px;
-  padding-right: 456px;
-  gap: 47px;
   display: flex;
 }
 .navbar__link {
@@ -118,6 +118,7 @@ button {
 }
 
 .navbar__link {
+  padding: 8px 24px;
   color: #696d76;
   text-align: center;
   font-family: "Open Sans";
@@ -143,7 +144,6 @@ button {
   width: 47px;
   height: 2px;
   flex-shrink: 0;
-  left: 0;
   bottom: 0;
   border-radius: 0.5px;
   background: #7264d6;
@@ -157,4 +157,206 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: 28px; /* 175% */
+}
+
+.header-action {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+
+/*Hero*/
+/*Hero__left*/
+.hero__inner {
+  display: flex;
+  align-items: center;
+}
+.hero__left {
+  width: 540px;
+}
+
+.hero__right {
+  width: 570px;
+  margin-left: 68px;
+}
+
+.hero-desc__desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.hero-desc__desc::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  background: #696d77;
+}
+
+.hero-heading {
+  margin-bottom: 20px;
+}
+
+.hero-heading__heading {
+  color: var(--primary-color);
+}
+
+.hero__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 540px;
+  height: 74px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__input {
+  width: 100%;
+  height: 100%;
+  padding: 0 23px;
+  outline: none;
+  border: none;
+  border-radius: inherit;
+}
+
+.hero__input {
+  color: #696d76;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.hero__button {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  width: 149px;
+  height: 58px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #7264d6;
+  outline: none;
+  border: none;
+}
+
+.section-desc__hero-right {
+  margin-top: 20px;
+  color: #696d76;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+}
+
+/*Hero right*/
+.hero__right {
+  width: 100%;
+  position: relative;
+}
+
+.hero-right__img {
+  margin-left: 100px;
+}
+.hero-deposit {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 46px;
+  top: 113px;
+  left: 0;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-deposit__desc {
+  margin-left: 8px;
+  color: #31456a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-deposit__money {
+  margin-left: 19px;
+  color: #4ab5e3;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero-interest {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 127px;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  background: #da6464;
+}
+
+.hero-interest__percent {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.hero-interest__desc {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-fund {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 124px;
+  height: 68px;
+  top: 438px;
+  right: 92px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #439f90;
+}
+
+.hero-fund__img {
+  width: 20px;
+  height: 26px;
+  flex-shrink: 0;
+  padding: 20px auto 22px 14px;
+}
+
+.hero-fund__money {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-fund__desc {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 400;
 }
